@@ -1,0 +1,41 @@
+h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+dd{
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.td1{
+  padding-left: 7rem;
+}
+
+.td2{
+  padding-left: 8rem;
+}
+
+.td3{
+  padding-left: 7rem;
+
+}
+
+.td4{
+  padding-left: 6rem;
+
+}
+
+.card{
+  width: 18rem;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  box-shadow: 1px -1px 12px  crimson;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

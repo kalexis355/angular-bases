@@ -1,0 +1,36 @@
+<div  class="card">
+<div class="header">
+  <img src={{img}} alt="logo ironman">
+<h1>{{name}}</h1>
+</div>
+<dl>
+  <td class="td1">Nombre:</td>
+  <dd>{{name}}</dd>
+
+  <td class="td2">Edad:</td>
+  <dd>{{age}}</dd>
+
+  <td class="td3">Método:</td>
+  <dd>{{getHeroDescription()}}</dd>
+
+  <td class="td4">Capitalizado:</td>
+  <dd>{{capitalizedName}}</dd>
+
+</dl>
+
+<!-- cuando se usa ngif el valor verdadero no muestra el boton -->
+<!-- El valor falso muestra el elemento -->
+<button
+*ngIf="name !== 'Spiderman'"
+class="btn btn-danger mx-2 my-2"
+(click)="changenHero('Spiderman')">Cambiar Nombre</button>
+
+<button
+*ngIf="age !== 19 "
+class="btn btn-danger mx-2 my-2"
+(click)="changeAge(19)" >Cambiar Edad</button>
+
+<button class="btn btn-danger mx-2 my-2"
+(click)="reset()"
+>Resetear</button>
+</div>

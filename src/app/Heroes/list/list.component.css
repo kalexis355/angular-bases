@@ -1,0 +1,25 @@
+.card{
+  width: 18rem;
+  margin: 0px auto;
+  text-align: center;
+  box-shadow: 1px -1px 10px green ;
+}
+
+.btn{
+  background-color: rgb(61, 138, 61);
+  color: white;
+  width: 180px;
+  margin: 5px auto;
+
+}
+
+.btn-outline-danger{
+  border: none;
+}
+h3{
+  margin: 10px;
+}
+
+hr{
+  margin: 0;
+}

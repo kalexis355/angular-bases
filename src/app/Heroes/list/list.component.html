@@ -1,0 +1,30 @@
+<div class="card">
+<h3 class="titulo">Listado de Héroes</h3>
+<hr>
+<!-- si no se cumple el ngif manda a llamar al #nadaFueBorrado -->
+<div *ngIf="heroeBorrado; else nadafueBorrado">
+<h3>Heroe borrado <small class="text-danger">{{heroeBorrado}}</small></h3>
+</div>
+<hr>
+
+<!-- Este elemento es como un div que no se ha dibujado en la pagina -->
+<!-- se coloca en #el nombre que se le haya definido en el ngif  -->
+<ng-template #nadafueBorrado>
+  <h3 *ngIf="!heroeBorrado">No ha borrado nada</h3>
+</ng-template>
+
+<button
+*ngIf="heroNames.length > 0"
+  class="btn btn-outline-danger"
+  (click)="borrarUltimoHeroe()">
+  Borrar Ultimo Heroe
+</button>
+
+
+<ul class="mt-2 list-group">
+  <!-- se usa el ngfor definiendole una variable para que recorrar el arreglo definidio en el ts -->
+  <li *ngFor="let name of heroNames"
+  class="list-group-item">{{name}}</li>
+</ul>
+
+</div>
