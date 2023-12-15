@@ -1,0 +1,14 @@
+<h4>Mascotas Agregadas <span><img src="assets/imgMascota/listado.png" alt=""></span> </h4>
+
+<div class="contenedor-lista">
+
+<ul class="list-group ">
+  <li class="list-group-item d-flex justify-content-between"
+  *ngFor="let mascota of mascotaLista;
+  let i = index">
+  <div>
+  {{i+1}}-{{mascota.name}}-{{mascota.raza}}-{{mascota.age}} Años
+</div>
+  <button class="btn btn-warning mx-2" (click)="borrarId(mascota.id!)" >x</button></li>
+</ul>
+</div>

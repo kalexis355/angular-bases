@@ -1,0 +1,8 @@
+<h3>Adición de Animales</h3>
+
+<form (ngSubmit)="emitirAnimal()">
+  <input type="text" [(ngModel)]="animalIngresado.name"  name="name" placeholder="Nombre">
+  <input type="text"  [(ngModel)]="animalIngresado.habitat" name="habitat" placeholder="Habitat">
+  <input type="text"  [(ngModel)]="animalIngresado.jaula" name="jaula" placeholder="Jaula">
+  <button class="btn btn-secondary">Agregar</button>
+</form>

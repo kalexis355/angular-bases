@@ -1,0 +1,33 @@
+<!-- <h1>DBZ Personajes</h1>
+<hr>
+
+<div class="fila" >
+  <div class="columna">
+    <dbz-list></dbz-list>
+  </div>
+
+  <div class="column">
+    <dbz-add-character></dbz-add-character>
+
+  </div>
+</div> -->
+
+<!-- Componente Padre -->
+<!--  -->
+<h1>DBZ Personajes</h1>
+<div class="fila">
+  <div class="columna">
+    <!-- aqui se esta usando el decorador @input el cual tiene la propiedad del hijo que esta en list.component -->
+    <!-- que sera igual al arreglo de la propiedad del padre que esta en main-page-component -->
+    <dbz-list  (onDelet)="onDeletePersonaje($event)" [personajeLista]="personaje"></dbz-list>
+  </div>
+  <div class="columna">
+
+    <!-- este componente debe dar la informacion de los heroes debido a que aqui esta el formulario -->
+
+    <!-- usando el evento onNewPersonaje de la clase addCharacter se llama a la funcion del mainPage.ts enviandole por parametro -->
+    <!-- el personaje con la palabra reservada $event -->
+    <dbz-add-character (onNewPersonaje)="onNewPersonaje($event)" ></dbz-add-character>
+
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.contenedor{
+  font-size: 20px;
+  width: 460px;
+  
+
+}
+h4{
+  font-size: 30px;
+}
+
+button{
+  text-align: center;
+}
+
+.contenedorDatos{
+  display: inline;
+}

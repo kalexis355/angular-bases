@@ -1,0 +1,27 @@
+<h4>Agregar Personaje</h4>
+<!-- este evento ayuda a que no se recargue el navegador web, a que se propague este  -->
+    <form class="form" (ngSubmit)="emitirPersonaje()">
+
+      <!-- el [(ngmodel sirve para comunicar el html con el ts)] -->
+      <input
+        type="text"
+
+        [(ngModel)]="personaje.name"
+        name="name"
+        placeholder="Nombre">
+
+      <input
+        type="number"
+        [(ngModel)]="personaje.power"
+        name="power"
+        class="input2"
+        placeholder="Poder">
+<!-- aqui no deberia de ir el evento clic debe de ir en el formulario como otro evento -->
+      <button type="submit" class="btn btn-primary">
+        Agregar</button>
+        <!-- esto es un pipe sirve para convertir algo en otra cosa -->
+        <!-- <pre>{{personaje | json}}</pre> -->
+
+
+    </form>
+

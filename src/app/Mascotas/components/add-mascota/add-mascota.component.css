@@ -1,0 +1,63 @@
+
+h4{
+  font-family: 'Cursive Font', cursive; /* Cambia 'Cursive Font' por el nombre de la fuente que desees utilizar */
+  color: #e8a477; /* Color del texto */
+  text-align: center; /* Alineación del texto al centro */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+input{
+  display: block;
+  /* margin: 1em; */
+  margin-top: 9px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #eda578;
+  text-align: center;
+  color: #674127;
+  font-family: 'Cursive Font', cursive;
+  width: 180px;
+}
+
+input:hover{
+  border-bottom: 2px solid #d06b2c;
+
+}
+
+input:focus{
+  outline: none;
+}
+
+::placeholder {
+  text-align: center;
+  color: #674127c8;
+  font-family: 'Cursive Font', cursive; /* Cambia 'Cursive Font' por el nombre de la fuente que desees utilizar */
+
+}
+
+button{
+  width: 64px;
+  height: 64px;
+  margin-top: 10px;
+  margin-left: 55px;
+  background-image: url('src/assets/imgMascota/mascota.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+
+}
+
+button:hover{
+  background-image: url('src/assets/imgMascota/mascotaHover.png');
+
+}
+
+.btn-warning{
+  background-color:#eda578 ;
+}
+
+
+
+
+
+

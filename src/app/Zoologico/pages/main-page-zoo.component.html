@@ -1,0 +1,12 @@
+<h1>ZOOLOGICO<h1>
+
+<section class="fila">
+
+<section class="columna">
+  <app-list-animals (emisionIdAnimal)="borrarAnimal($event)" [animalesLista]="animalesRecuperado"></app-list-animals>
+</section>
+<section class="columna">
+  <app-add-animals (animalAEmitir)="nuevoAnimal($event)"></app-add-animals>
+</section>
+
+</section>

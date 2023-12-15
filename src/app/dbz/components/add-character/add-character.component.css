@@ -1,0 +1,54 @@
+h4{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  color: white;
+text-shadow: 2px 2px 15px red;
+-webkit-text-stroke: 0.5px  black;
+
+}
+
+.form{
+  text-align: center;
+
+}
+
+input{
+  display: block;
+  margin: 10px auto;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid rgb(255, 111, 0);
+  text-align: center;
+}
+
+.input2{
+  margin-top: 15px;
+}
+input::placeholder{
+  color: white;
+  text-align: center;
+}
+
+input:hover{
+  border: none;
+  border-bottom: 2px solid red;
+}
+
+input:focus{
+  outline: none;
+  text-align: center;
+}
+
+.btn{
+  margin-top: 12.5px;
+}
+.btn-primary{
+  background-color: rgb(7, 7, 118);
+}
+
+button:hover{
+  background-color: rgba(10, 10, 209, 0.627);
+
+}

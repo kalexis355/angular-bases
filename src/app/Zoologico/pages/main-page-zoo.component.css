@@ -1,0 +1,12 @@
+h1{
+  font-family: cursive;
+  text-align: center;
+
+}
+
+
+.fila{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}

@@ -1,0 +1,12 @@
+
+
+<h1>Listado de Mascotas <span><img src="assets/imgMascota/perro.png" alt="imagen"></span> </h1>
+
+<div class="fila">
+  <div class="columna">
+    <app-add-mascota (nuevaMascota)="nuevaMascota($event)" ></app-add-mascota>
+  </div>
+  <div class="columna">
+    <app-list-mascotas (emisionId)="borrarMascota($event)" [mascotaLista]="mascota" ></app-list-mascotas>
+  </div>
+</div>

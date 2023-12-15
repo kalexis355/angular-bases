@@ -1,0 +1,13 @@
+
+<h4>Datos Mascota <span><img src="assets/imgMascota/datos.png" alt=""></span> </h4>
+
+<div class="contenedor">
+<form (ngSubmit)="emitirMascota()">
+
+<input type="text" [(ngModel)]="mascota.name" name="name" class="a" placeholder="Nombre">
+<input type="text" [(ngModel)]="mascota.raza" class="a" name="raza" id="" placeholder="Raza">
+<input type="number" [(ngModel)]="mascota.age"  class="a" name="age" placeholder="Edad">
+
+<button type="submit" class="btn btn-warning"></button>
+</form>
+</div>

@@ -1,0 +1,14 @@
+<h4>Listado Animales</h4>
+
+<section class="contenedor">
+    <ul class="list-group ">
+      <li *ngFor="let animal of animalesLista; let i=index" class="list-group-item d-flex justify-content-between">
+        <div class="contenedorDatos">
+        <strong> {{i+1}}-</strong>
+        {{animal.name}}-<strong>Habitat:</strong>{{animal.habitat}}-<strong>Jaula:</strong>{{animal.jaula}}
+      </div>
+  <button class="btn btn-secondary" (click)="emitirIdAnimal(animal.id)">X</button>
+  </li>
+  </ul>
+
+</section>

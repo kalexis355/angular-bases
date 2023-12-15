@@ -1,0 +1,21 @@
+h1{
+  font-family: 'Cursive Font', cursive; /* Cambia 'Cursive Font' por el nombre de la fuente que desees utilizar */
+  font-size: 3em; /* Tamaño de la fuente, ajusta según sea necesario */
+  color: #eda578; /* Color del texto */
+  text-align: center; /* Alineación del texto al centro */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fila{
+  display: flex;
+  margin-top: 80px;
+  margin-left: 27%;
+
+}
+
+.columna{
+  margin: 20px;
+  margin-left: 40px;
+}
+
+

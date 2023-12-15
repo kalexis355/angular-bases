@@ -1,2 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100vh;
+}
 
+body {
+  background: url("assets/imgZoologico/fondoZoologico.png"),
+    linear-gradient(to bottom, #fff7ca 50%, #f79b1a);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+   background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background: url("assets/imgZoologico/fondoZoologicoMovil.png"),
+    linear-gradient(to bottom, #fff7ca 50%, #f79b1a);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
